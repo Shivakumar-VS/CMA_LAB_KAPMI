@@ -1,0 +1,8 @@
+h1{
+    color: blue;
+    font-size: 30px;}
+*{
+    background-image: url('https://www.w3schools.com/w3images/fjords.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
