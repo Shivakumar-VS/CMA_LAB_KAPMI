@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style  type="text/css"> 
+        body{ background-color:beige;   color:blue;} 
+        select{color:blue;   font-size:14;} 
+        #txtbox{color:orange;   font-style:bold;   font-size:14;} 
+    </style>
+</head>
+<body>
+    <h3>Program to display Capital upon selection of Country.</h3>
+    <select    id="countries"    onchange=getCapital( )> 
+        <option    value="0">Australia</option> 
+        <option    value="1">Poland</option> 
+        <option    value="2">Mexico</option> 
+        <option    value="3">Germany</option> 
+        <option    value="4">India</option> 
+        </select> <br> <br> 
+        Capital: <input   type="text"    id="txtbox"> 
+        <script   language="JavaScript"> 
+        function   getCapital( )  
+        { 
+        var   capitals=["Canberra", "Warsaw", "Mexico City", "Berlin", "New Delhi"]; 
+        var   i = document.getElementById("countries").selectedOptions[0].value; 
+        document.getElementById("txtbox").value = capitals[i]; 
+        } 
+</script>
+</body>
+</html>
