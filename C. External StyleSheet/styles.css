@@ -1,0 +1,9 @@
+body{ 
+    background-color: beige; 
+    font-family:serif; 
+    font-size: 26pt; 
+}
+h2{color:purple; } 
+strong{color:green; font-size: 20pt; } 
+sub{color:red;} 
+sup{color: blue}
