@@ -1,0 +1,74 @@
+<!-- 6. Create an interactive web page using HTML5 layout tags.  -->
+<html><head><title>HTML CSS Layout</title> 
+<style> 
+*{ 
+    box-sizing: border-box; color:purple
+}
+body 
+{ 
+    font-family: Arial, Helvetica, sans-serif;   
+}
+header 
+{ 
+    background-color:gray; 
+    padding: 10px; 
+    text-align: center;
+    box-sizing: border-box; color:purple;
+    font-size: 35px;
+} 
+h2 
+{ 
+    color:blue; text-align:center;
+}
+nav 
+{ 
+    float: left; 
+    width: 30%; 
+    height: 300px; 
+    background:orange; 
+    padding: 20px;
+}
+nav   ul 
+{  list-style-type: square;  color:white;} 
+article 
+{ 
+    float: right; 
+    padding: 20px; 
+    width: 70%; 
+    background-color: yellow; 
+    height: 300px;
+}
+section::before  
+{ 
+    content: "This is section."; 
+    display: table; 
+    clear: both; 
+}
+footer  
+{ 
+    background-color: #666; 
+    padding: 10px; 
+    text-align: center; 
+    color: yellow; 
+} 
+@media (max-width: 600px)  
+{ 
+nav, article {   width: 100%;  height: auto;  } 
+} 
+</style></head><body> 
+<h2>HTML5 CSS Layout</h2> 
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the 
+columns will stack on top of each other.</p> 
+<p>Resize the browser window to see the responsive effect</p> 
+<header><h2>HTML Layout</h2></header> 
+<section> 
+<nav><ul> 
+<li><a href="#">Home</a></li> 
+<li><a href="#">AboutUs</a></li> 
+<li><a href="#">ContactUs</a></li> 
+</ul></nav> 
+<article> 
+<h1>Your content goes here.</h1> 
+</article></section><footer> 
+<strong>@Copyright: Kateel Ashok Pai Memorial College, Shimoga</strong> 
+<p>This is Footer</p></footer></body></html> 
