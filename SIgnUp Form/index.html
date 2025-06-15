@@ -1,0 +1,67 @@
+<html> <head> 
+<script   language="JavaScript">  
+function   validate( ) 
+{  
+ var  nflag=0,  pflag=0,  phflag=0; 
+ var  name = document.forms.RegForm.Name.value; 
+ var  password =document.forms.RegForm.Password.value; 
+ var  phone = document.forms.RegForm.Telephone.value; 
+ var  len=phone.length; 
+ //alert(len); 
+ var  regPhone=/^[0-9]/g; // Javascript reGex for Phone Number validation. 
+ var  regName = /[^a-zA-Z]/g; // Javascript reGex for Name validation 
+ if(name == "" || regName.test(name)) 
+ {  
+  window.alert("Please enter your name properly."); 
+  name.focus( ); 
+  nflag=1; 
+  //return false; 
+ } 
+ if(password == "") 
+ {  
+   alert("Please enter your password"); 
+   password.focus( ); 
+   pflag=1; 
+   //return false; 
+ } 
+ if(password.length <6 ) 
+ {  
+   alert("Password should be atleast 6 character long"); 
+   password.focus( ); 
+ }
+ pflag=1; 
+//return false; 
+} 
+if(phone == "" || !regPhone.test(phone) || len!=10) 
+{  
+alert("Please enter valid 10 Digit phone number."); 
+phone.focus( ); 
+phflag=1; 
+//return false; 
+}  
+if(nflag==0   &&   pflag==0   &&   phflag==0) 
+window.alert("Registration success"); 
+//return true;  
+</script> <style> 
+table 
+{  margin-left: auto;   margin-right: auto;  } 
+div  
+{ 
+box-sizing: border-box; 
+width: 100%; 
+border: 100px   solid   black; 
+float: left; 
+align-content: center; 
+align-items: center; 
+} 
+</style> </head> <body> 
+<form   name="RegForm"  onsubmit="validate( )"   method="post"> 
+<table> 
+<caption><h1 style="text-align: center;">REGISTRATION FORM</h1></caption> 
+<tr><th align=left>Name:</th><th><input type="text" size="65" id="Name" name="Name"></th></tr> 
+<tr><th align=left>Password:</th><th><input type="text" size="65" name="Password"></th></tr> 
+<tr><th align=left>Telephone:</th><th><input type="text" size="65" name="Telephone"></th></tr> 
+<tr><th></th><th><input type="submit" value="Register" name="Submit"></th></tr> 
+<tr><th></th><th><input type="reset" value="Reset" name="Reset"></th></tr> 
+</table> 
+</p> </form></body> </html> 
